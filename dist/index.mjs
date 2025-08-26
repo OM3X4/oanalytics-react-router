@@ -10,7 +10,7 @@ function getOrCreateClientId() {
   }
   return id;
 }
-var AnalyticsTracker = () => {
+var AnalyticsTracker = ({ appId }) => {
   const location = useLocation();
   const navType = useNavigationType();
   const [sessionId] = useState(() => crypto.randomUUID());

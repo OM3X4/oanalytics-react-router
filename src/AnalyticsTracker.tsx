@@ -12,7 +12,9 @@ function getOrCreateClientId() {
     return id;
 }
 
-export const AnalyticsTracker = () => {
+export const AnalyticsTracker = (
+    { appId }: { appId: string }
+) => {
     const location = useLocation();
     const navType = useNavigationType();
 

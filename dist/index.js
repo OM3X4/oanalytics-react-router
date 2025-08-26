@@ -36,7 +36,7 @@ function getOrCreateClientId() {
   }
   return id;
 }
-var AnalyticsTracker = () => {
+var AnalyticsTracker = ({ appId }) => {
   const location = (0, import_react_router_dom.useLocation)();
   const navType = (0, import_react_router_dom.useNavigationType)();
   const [sessionId] = (0, import_react.useState)(() => crypto.randomUUID());

@@ -1,3 +1,5 @@
-declare const AnalyticsTracker: () => null;
+declare const AnalyticsTracker: ({ appId }: {
+    appId: string;
+}) => null;
 
 export { AnalyticsTracker };

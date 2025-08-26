@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "ESNext",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "jsx": "react-jsx",
+        "declaration": true, // emit .d.ts
+        "declarationMap": true,
+        "esModuleInterop": true, // allow default imports from CJS
+        "skipLibCheck": true, // faster build
+        "strict": true, // strict type checking
+        "moduleResolution": "node",
+        "outDir": "dist"
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

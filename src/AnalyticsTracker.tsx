@@ -33,7 +33,7 @@ export const AnalyticsTracker = (
                 timestamp: Date.now(),
                 userAgent: navigator.userAgent,
                 referrer: document.referrer || "direct",
-                app_id: "ec2e4fe5-e46d-459d-895c-6618a57aae83"
+                app_id: appId
             };
 
             // navigator.sendBeacon("http://localhost:3000/log", JSON.stringify(payload));

@@ -39,7 +39,7 @@ export const AnalyticsTracker = (
             // navigator.sendBeacon("http://localhost:3000/log", JSON.stringify(payload));
 
 
-            const response = await fetch("http://localhost:3001/log", {
+            const response = await fetch("https://oanalytics-server-production.up.railway.app/log", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
